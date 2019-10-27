@@ -10,6 +10,10 @@
 
     <title>Hello, world!</title>
   </head>
+  <style>
+
+</style>
+
   <body>
   
 
@@ -42,11 +46,15 @@
 </br>
 </br>
 <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+  <img src="..." class="card-img-top" alt="Test">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
+    <h5 class="Nazwa karty">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-body1">
+    <a href="#" id="card-link1" class="card-link">Pierwszy Link</a>
+    <a href="#" id="card-link2" class="card-link">Drugi link (Pierwszy usunięty)</a>
   </div>
 </div>
 
@@ -74,9 +82,61 @@
 	x[0].innerHTML = 6;
 	</script>
 	
+	
+	<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Pokaz pierwszy element</a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Pokaz drugi element </button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Pokaz oba elementy</button>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+</div>
+	
+	<input type="text" id="fokus" value="Tu wprowadź tekst">
+	<p>Naciśnij aby użyć js do wyostrzenia/stracenia ostrości.</p>
+	<button type="button" onclick="getFocus()">Fokus</button>
+	<button type="button" onclick="loseFocus()">Strać fokus</button>
+
+<div class="jumbotron">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead" id="dodanieTextu">Naciśnij przycisk aby dodać tekst.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <button class="btn btn-primary btn-lg" onclick="funkcja()" >Dodaj tekst</button>
+</div>
+
+<h3>Ilość obrazkow na tej stronie obliczone przez js</h3>
+<p  id="demo"></p>
+
+
+<h3>Tutaj wyświetli się tytuł</h3>
+<p  id="nowy"></p>
+
+
+<h3 id="allSmall">TEN TEKST JEST NAPISANY WIELKIMI LITERAMI</h3>
+
+<p  id="replce">Bardzo lubie wstawać rano</p>
+
+<p  id="slice">Bardzo lubie wstawać rano</p>
+
+<h2 id="nowyParagraf">Tu powstanie nowy paragraf</h2>
+
+
+
 	<script src = "grupa2.js"></script>
-	
-	
 	
 	
   </body>
